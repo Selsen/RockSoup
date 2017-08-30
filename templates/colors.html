@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% extends "layout.html" %}
+{% block body %}
+ <html>
+	<head>
+		<!-- This code iterates through dictionary rock and outputs key, value (color, inputvalue)-- 
+
+		{% for key, value in rock.iteritems() %}
+		<h1>Your {{ key }} is {{ value }}</h1> 
+		{% endfor %} -->
+
+		{% for key, value in rock.iteritems() %}
+
+		<h1>So it's {{ value }} or {{ value }}'ish</h1>
+		<h2>Which one does it look like the most?</h2>
+		
+
+		<a href="http://www.skan-kristallin.de/bornholm/gesteine/gesteinsdarstellung/svaneke/svaneketext.html">
+			<img src="http://www.skan-kristallin.de/bornholm/gesteine/gesteinsdarstellung/svaneke/l_svaneke/l_svaneke_12.JPG"
+			data-name="Svaneke granit">
+		</a>
+
+		<a href="http://www.skan-kristallin.de/bornholm/gesteine/gesteinsdarstellung/gneis/stroeby.html"> 
+			<img src="http://www.skan-kristallin.de/bornholm/gesteine/gesteinsdarstellung/gneis/l_gneis/l_gneisstroeby_w.jpg"
+			id="Bornholm-gneis">
+		</a>
+
+		<a href="http://www.skan-kristallin.de/bornholm/gesteine/gesteinsdarstellung/sedimentgesteine/nexoe/nexoe_33.html#2">
+			<img src="http://www.skan-kristallin.de/bornholm/gesteine/gesteinsdarstellung/sedimentgesteine/nexoe/l_nexoe/l_nexoe_34.JPG"
+			id="Nexø sandsten">
+		</a>
+
+		{% endfor %}
+
+		
+
+	</head>
+
+	<body>
+
+	</body>
+	
+
+</html>
+{% endblock %}

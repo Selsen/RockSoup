@@ -1,0 +1,22 @@
+<!-- # Here goes the HTML code that shown on root of URL -->
+{% extends "layout.html" %}
+{% block body %}
+ 
+	<div class="block1">
+		<h1>Find out what rock you got</h1>
+	</div>
+
+
+	<div class="block2">
+		
+		<form action="rock" method="post">
+			<h2>What color your rock?</h2> 
+			<input type="text" name="color">
+			<p><input type="submit" value="Check it out"/></p> 
+		</form>
+
+
+
+	</div>
+
+{% endblock %}
